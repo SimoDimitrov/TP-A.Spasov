@@ -35,7 +35,7 @@ int main()
     while(1)
 	{
        		 while(memory -> position != position)
-			{
+		 {
 	       		 seed = verify((void *)memory->array[position %=COUNT]);
 	        	 if(seed==-1)
 			 {
