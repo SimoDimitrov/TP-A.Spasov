@@ -38,27 +38,27 @@ int main()
 			{
 	       		 seed = verify((void *)memory->array[position %=COUNT]);
 	        	 if(seed==-1)
-				 {
+			 {
 		        	printf("Verify error\n");
 	        	 }
 
 	        	 if(memory->position >= position + COUNT )
-				 {
+			 {
 	            		printf("overload");
 	            		return 1;
 	        	 }
 
 	        	 if(i==0)
-				 {
+			 {
             			genuineseed=seed;
                 		i = 1;
 	        	 }
 				 else if(genuineseed + 1 == seed)
-				 {
+			 {
 	            		printf("Error in seed");
 	        	 }
-				 else
-				 {
+			 else
+			 {
            			genuineseed++;
 	        	 }
 
