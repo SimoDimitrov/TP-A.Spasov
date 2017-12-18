@@ -37,7 +37,7 @@ int main()
     	uint32_t seed = 0;
 		
     	while(1)
-		{
+	{
 		
 			generate((void*)memory->array[memory->position %= COUNT], seed);
 			printf("Generate: array[%ld] - seed: %d\n", memory->position %= COUNT,seed);
